@@ -5,7 +5,7 @@
 
 
 ## thanh vien nhom
--Vu Duc Duy
+###Vu Duc Duy
 -Ha Duc Hai
 -Nguyen Quoc Thinh
 -Le Khac Chau
