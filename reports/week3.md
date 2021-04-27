@@ -21,4 +21,6 @@
 ## Đàm Khắc Khánh Duy
 - Tìm hiểu cách tạo giao diện bằng tkinter python
 - Code demo User Interface.
-
+## Nguyễn Quốc Thịnh
+- Tìm hiểu cách tạo giao diện bằng tkinter python
+- Tìm các thư viện tạo giao diện
