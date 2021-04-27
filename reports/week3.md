@@ -21,4 +21,7 @@
 ## Đàm Khắc Khánh Duy
 - Tìm hiểu cách tạo giao diện bằng tkinter python
 - Code demo User Interface
+## Le Khac Chau
+- Xuat va xu li data thanh cong.
+- up code
 
