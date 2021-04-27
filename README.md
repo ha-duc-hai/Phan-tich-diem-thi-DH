@@ -7,9 +7,9 @@
 - Giúp nhà trường đánh giá mức độ quan tâm của học sinh đối với nhà trường, từ đó điểu chỉnh chỉ tiêu và kế hoạch giáo dục
 
 ## Mô tả 
-### reports -> Báo cáo hàng tuần
-### User Interface -> chứa code giao diện người dùng
-### get_dataSelenium.py -> code chạy lấy dữ liệu 
+- reports -> Báo cáo hàng tuần
+- User Interface -> chứa code giao diện người dùng
+- get_dataSelenium.py -> code chạy lấy dữ liệu 
 
 ## Thành viên nhóm
 ### Hà Đức Hải (trưởng nhóm)
