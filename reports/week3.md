@@ -25,10 +25,7 @@
 ## Le Khac Chau
 - Xuat va xu li data thanh cong.
 - up code
-
-=======
 - Code demo User Interface.
 ## Nguyễn Quốc Thịnh
 - Tìm hiểu cách tạo giao diện bằng tkinter python
 - Tìm các thư viện tạo giao diện
->>>>>>> 66e6368d66bb989051a060cd256bc0ec36c67747
