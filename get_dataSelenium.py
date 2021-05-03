@@ -4,11 +4,11 @@ import pandas as pd
 from selenium.webdriver.common.keys import Keys
 import csv
 # 1.khai bao bien brower
-#brower = webdriver.Chrome(executable_path="./chromedriver.exe")# window 10
+brower = webdriver.Chrome(executable_path="./chromedriver.exe")# window 10
 brower = webdriver.Chrome(executable_path="./chromedriver")# linux
 # 2.mo mot trang web
 brower.get("https://diemthi.vnexpress.net/#area=2&college=undefined&q=score1")
-for i in range(1, 2):# lấy 5 tỉnh
+for i in range(1, 5):# lấy 5 tỉnh
 	# Đợi trang web mở
 	sleep(5)
 
@@ -29,8 +29,8 @@ for i in range(1, 2):# lấy 5 tỉnh
 	data = data.text
 	data = data.split(' ')
 	print(type(data))
-	data1 = open("data1.text","w+")
-	data1.writelines(data)
+	#data1 = open("data1.text","w+")
+	#data1.writelines(data)
 	#Xuli  = data1.readlines(data)
 	#diemtoan = []
 	#diemly = []
