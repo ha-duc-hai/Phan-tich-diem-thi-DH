@@ -8,10 +8,13 @@
 - Kết nối data draw về với tkinder
 
 3. Plan next week
-- Phân tích 
+- Phân tích
 - Phân công Thịnh, K.Duy tìm cách kết nối data với tkinder
 
 # Đóng góp của thành viên
 
 ## Hà Đức Hải
 - Viết báo cáo tuần.
+## Vũ Đức Duy
+- Tìm hiểu về Tkinter. Fix bug cho Khánh Duy nhưng chưa tìm ra cách sửa bug
+
