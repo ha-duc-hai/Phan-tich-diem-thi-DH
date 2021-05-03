@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 import csv
 # 1.khai bao bien brower
 brower = webdriver.Chrome(executable_path="./chromedriver.exe")# window 10
-brower = webdriver.Chrome(executable_path="./chromedriver")# linux
+# brower = webdriver.Chrome(executable_path="./chromedriver")# linux
 # 2.mo mot trang web
 brower.get("https://diemthi.vnexpress.net/#area=2&college=undefined&q=score1")
 for i in range(1, 5):# lấy 5 tỉnh
@@ -27,8 +27,8 @@ for i in range(1, 5):# lấy 5 tỉnh
 
 	# xuất data (Châu) -> csv
 	data = data.text
-	data = data.split(' ')
-	print(type(data))
+	# data = data.split(' ')
+	print(data)
 	#data1 = open("data1.text","w+")
 	#data1.writelines(data)
 	#Xuli  = data1.readlines(data)
@@ -38,7 +38,7 @@ for i in range(1, 5):# lấy 5 tỉnh
 	    #Xuli = csv.writer(file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 	    #Xuli.writerow(diemtoan)
 	    #Xuli.writerow(diemly)
-	data1.close()
+	# data1.close()
 
 # 4.close brower
 brower.close()
