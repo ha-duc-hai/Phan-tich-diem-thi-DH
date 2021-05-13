@@ -35,7 +35,6 @@ for i in range(1, 20):# lấy 5 tỉnh
 	data_ = brower.find_element_by_xpath('//*[@id="result"]/div[2]/div[2]/div/div[2]/div[3]/div/table/tbody')
 
 	# xuất data -> csv
-	
 
 	data_ = data_.text
 	print(data_)
@@ -52,7 +51,7 @@ for i in range(1, 20):# lấy 5 tỉnh
 		data_anh.append(data[8])
 		data_su.append(data[9])
 		data_dia.append(data[10])
-	
+
 	hoc_sinh = {'sbd':data_sbd,
             	'tinh':data_tinh,
           		'toan':data_toan,

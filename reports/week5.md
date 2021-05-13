@@ -16,3 +16,6 @@
 - Viết báo cáo tuần.
 - Xuất data -> csv
 
+## Vũ Đức Duy
+- Xử lý dữ liệu xuất ra csv
+
