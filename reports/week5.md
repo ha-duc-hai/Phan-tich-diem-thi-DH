@@ -18,4 +18,5 @@
 
 ## Vũ Đức Duy
 - Xử lý dữ liệu xuất ra csv
-
+## Đàm Khắc Khánh Duy
+-Update new code, chỉnh sửa vị trí nút bấm trong tkinter
