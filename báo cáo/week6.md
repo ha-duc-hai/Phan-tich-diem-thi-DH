@@ -18,5 +18,5 @@ thu thập dữ liệu tkinter# Báo cáo nhóm
 ## Vũ Đức Duy
 - Làm việc với dữ liệu crawl được và tìm hiểu tkinter để kết nối với dữ liệu
 ## Đàm Khắc Khánh Duy
-- Cải thiện giao diện, tìm cách bố trí cho phù hi.
+- Cải thiện giao diện, tìm cách bố trí cho phù hợp, tìm hiểu thêm về tkinter.
    
