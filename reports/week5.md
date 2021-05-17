@@ -20,3 +20,5 @@
 - Xử lý dữ liệu xuất ra csv
 ## Đàm Khắc Khánh Duy
 -Update new code, chỉnh sửa vị trí nút bấm trong tkinter
+## Nguyễn Quốc Thịnh
+-Chỉnh sửa cải thiện giao diện
