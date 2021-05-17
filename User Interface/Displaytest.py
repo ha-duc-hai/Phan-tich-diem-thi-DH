@@ -35,29 +35,29 @@ def create_charts():
     x3 = A[2]
 
 
-    figure1 = Figure(figsize=(4,3), dpi=100) 
-    subplot1 = figure1.add_subplot(111) 
-    xAxis = [float(x1),float(x2),float(x3)] 
-    yAxis = [float(x1),float(x2),float(x3)] 
-    subplot1.bar(xAxis,yAxis, color = 'lightsteelblue') 
-    bar1 = FigureCanvasTkAgg(figure1, root) 
+    figure1 = Figure(figsize=(4,3), dpi=100)
+    subplot1 = figure1.add_subplot(111)
+    xAxis = [float(x1),float(x2),float(x3)]
+    yAxis = [float(x1),float(x2),float(x3)]
+    subplot1.bar(xAxis,yAxis, color = 'lightsteelblue')
+    bar1 = FigureCanvasTkAgg(figure1, root)
     bar1.get_tk_widget().pack(side=tk.LEFT, fill=tk.BOTH, expand=0)
-      
-    figure2 = Figure(figsize=(4,3), dpi=100) 
-    subplot2 = figure2.add_subplot(111) 
-    labels2 = 'Label1', 'Label2', 'Label3' 
+
+    figure2 = Figure(figsize=(4,3), dpi=100)
+    subplot2 = figure2.add_subplot(111)
+    labels2 = 'Label1', 'Label2', 'Label3'
     pieSizes = [float(x1),float(x2),float(x3)]
     my_colors2 = ['lightblue','lightsteelblue','silver']
-    explode2 = (0, 0.1, 0)  
+    explode2 = (0, 0.1, 0)
     subplot2.pie(pieSizes, colors=my_colors2, explode=explode2, labels=labels2, autopct='%1.1f%%', shadow=True, startangle=90) 
-    subplot2.axis('equal')  
+    subplot2.axis('equal')
     pie2 = FigureCanvasTkAgg(figure2, root)
     pie2.get_tk_widget().pack()
 
 def clear_charts():
     bar1.get_tk_widget().pack_forget()
     pie2.get_tk_widget().pack_forget()
-            
+
 button1 = tk.Button (root, text=' Create Charts ',command=create_charts, bg='palegreen2', font=('Arial', 11, 'bold')) 
 canvas1.create_window(400, 180, window=button1)
 
@@ -66,5 +66,5 @@ canvas1.create_window(400, 220, window=button2)
 
 button3 = tk.Button (root, text='Exit Application', command=root.destroy, bg='lightsteelblue2', font=('Arial', 11, 'bold'))
 canvas1.create_window(400, 260, window=button3)
- 
+
 root.mainloop()

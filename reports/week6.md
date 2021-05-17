@@ -14,3 +14,7 @@
 
 ## Hà Đức Hải
 - Viết báo cáo tuần.
+
+## Vũ Đức Duy
+- Làm việc với dữ liệu crawl được và tìm hiểu tkinter để kết nối với dữ liệu
+

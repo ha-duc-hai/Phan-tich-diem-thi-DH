@@ -29,7 +29,7 @@ for i in range(1, 65):# lấy mã tỉnh
     id_ = str(i)
     if i < 10:
         id_ = '0' + id_
-    
+
     for num in range(410, 501):# lấy 1000 dl của mỗi tỉnh
         _id = str(num)
         while len(_id) < 6:
@@ -47,7 +47,7 @@ for i in range(1, 65):# lấy mã tỉnh
             if (temp == ""):
                 temp = "0"
             data.append(temp)
-        # tách dl cần lấy 
+        # tách dl cần lấy
         data_temp = []
         data_temp.append(data[1])
         data_temp.append(data[2])
@@ -63,6 +63,7 @@ for i in range(1, 65):# lấy mã tỉnh
         # update dữ liệu vào csv
         df_temp= pd.DataFrame([data_temp], columns=hoc_sinh)
         df_temp.to_csv('new_data.csv', mode='a', header=False)
-        
+
 # đóng trình duyệt
 brower.close()
+
