@@ -1,4 +1,4 @@
-# Báo cáo nhóm
+thu thập dữ liệu tkinter# Báo cáo nhóm
 
 1. Done
 - update code get_data từ 1 - > 1000 của từng tỉnh
@@ -17,4 +17,6 @@
 
 ## Vũ Đức Duy
 - Làm việc với dữ liệu crawl được và tìm hiểu tkinter để kết nối với dữ liệu
-
+## Đàm Khắc Khánh Duy
+- Cải thiện giao diện, tìm cách bố trí cho phù hi.
+   
