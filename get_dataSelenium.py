@@ -112,3 +112,4 @@ hoc_sinh = {'sbd':data_sbd,
 
 df = pd.DataFrame(hoc_sinh, columns = ['sbd', 'tinh','toan','van','anh','ly','hoa','sinh','su','dia','gdcd'])
 df.to_csv(r'data.csv')
+
