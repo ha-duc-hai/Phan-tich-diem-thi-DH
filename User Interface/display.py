@@ -4,7 +4,7 @@ from PIL import Image,ImageTk
 root=Tk()
 root.title('Phân tích Điểm Thi Đại Học💯💯')
 root.geometry("800x630")
-root.iconbitmap('icon.ico')
+root.iconbitmap('kk.ico')
 
 load=Image.open("background.png")
 render=ImageTk.PhotoImage(load)

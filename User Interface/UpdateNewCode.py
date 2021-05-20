@@ -3,8 +3,16 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 from PIL import Image,ImageTk
 
+# đọc cvs - truyền dl Châu xl
+# [sbd,tinh,toan,van,anh,ly,hoa,sinh,su,dia,gdcd]
+
+# hướng phân tích
+#   median của từng môn -> A = median['toan','văn' ,...]
+#   so sánh median của 2 năm 2019 - 2020
+#   
 A = [5, 7, 9 ]
- 
+# A  = ['01000001',]
+
 root= tk.Tk()
 root.title('Phân tích Điểm Thi Đại Học💯💯')
 root.geometry("800x630")
