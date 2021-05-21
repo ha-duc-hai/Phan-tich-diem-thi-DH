@@ -16,6 +16,8 @@ img=Label(root,image=render)
 img.place(x=1,y=0)
 
 canvas1 = tk.Canvas(root, width = 800, height = 300)
+filename = PhotoImage(file = "background.png")
+image = canvas1.create_image(800, 0, anchor=NE, image=filename)
 canvas1.pack()
 
 label1 = tk.Label(root, text='Phân tích điểm thi Đại Học')
