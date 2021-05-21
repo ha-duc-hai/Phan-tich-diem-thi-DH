@@ -19,7 +19,7 @@ except:
     df = pd.DataFrame(columns = hoc_sinh)
     df = df.to_csv('new_data.csv')
 
-stt = 71
+stt = 256
 ma_tinh = 4
 stt_temp = stt
 ma_tinh_temp = ma_tinh
