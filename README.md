@@ -13,6 +13,7 @@
 - data.csv -> dữ liệu điểm thi ĐH của 63 tỉnh thành
 
 ## Một số lưu ý/ hướng dẫn
+- Sử dụng python 3
 - cài chromedrive đúng yêu cầu của máy (ở đây chúng tôi cài phiên bản 90 dành cho windows)
 - cài thư viện selenium ( pip install selenium )
 
