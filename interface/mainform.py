@@ -12,8 +12,8 @@ root.title("Phần mềm phân tích điểm thi đại học")
 tabControl = ttk.Notebook(root)
 
 # window center screen
-window_height = 600
-window_width = 1100
+window_height = 650
+window_width = 1250
 
 screen_width = root.winfo_screenwidth()
 screen_height = root.winfo_screenheight()
@@ -22,6 +22,7 @@ x_cordinate = int((screen_width/2) - (window_width/2))
 y_cordinate = int((screen_height/2) - (window_height/2)-20)
 
 root.geometry("{}x{}+{}+{}".format(window_width, window_height, x_cordinate, y_cordinate))
+
 
 # TAB 1 ( biểu đồ điểm)
 tab_1(tabControl=tabControl)
