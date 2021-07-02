@@ -6,7 +6,7 @@ from tkinter.constants import CENTER, END, LEFT, RIGHT, VERTICAL, Y
 import webbrowser
 
 def tab_3(tabControl):
-    tab3 = ttk.Frame(tabControl)
+    tab3 = ttk.Frame(tabControl, style='new.TFrame')
     tabControl.add(tab3, text ='So sánh các ngành học giữa các trường')
     # tabControl.pack(expand = 1, fill ="both")
 
@@ -43,7 +43,7 @@ def tab_3(tabControl):
 
         #for opening the link in browser
         import webbrowser
-        webbrowser.open(link[int(str)-1].format(input_item))
+        webbrowser.open(link[int(str, 16)-1].format(input_item))
     # menu majors
     def OptionMenu_CheckButton(event):
 
@@ -59,7 +59,7 @@ def tab_3(tabControl):
                 line = line.split(',')
                 table_.insert('','end',values=(line[0],line[1],line[2],line[3],line[4],line[5]))
                 table_.bind("<Double-1>", link.append(line[5]))
-                table_.bind("<Double-1>", link_tree)
+            table_.bind("<Double-1>", link_tree)
 
 
         if variable.get() == "Quản trị kinh doanh":
@@ -74,7 +74,7 @@ def tab_3(tabControl):
                 line = line.split(',')
                 table_.insert('','end',values=(line[0],line[1],line[2],line[3],line[4],line[5]))
                 table_.bind("<Double-1>", link.append(line[5]))
-                table_.bind("<Double-1>", link_tree)
+            table_.bind("<Double-1>", link_tree)
 
         if variable.get() == "y dược":
             # clear old data
@@ -88,7 +88,7 @@ def tab_3(tabControl):
                 line = line.split(',')
                 table_.insert('','end',values=(line[0],line[1],line[2],line[3],line[4],line[5]))
                 table_.bind("<Double-1>", link.append(line[5]))
-                table_.bind("<Double-1>", link_tree)
+            table_.bind("<Double-1>", link_tree)
         pass
 
     variable = StringVar()

@@ -1,21 +1,21 @@
-"Trường","Ngành","Điểm chuẩn","Chỉ tiêu","Học phí","Giới thiệu"
-"Phenikaa","CNTT","19.05","200","24tr","https://cs.phenikaa-uni.edu.vn/vi/post/dao-tao/cong-nghe-thong-tin"
-"Bách Khoa","CNTT(Khoa Học Máy Tính)","29.04","260","22-28tr/năm","https://ts.hust.edu.vn/nganh-dao-tao/cntt-khoa-hoc-may-tinh"
-"HV BCVT","CNTT","26.65","630","480k/tín(17tr 1 năm)","https://tuyensinh.ptit.edu.vn/"
-"ĐH Công Nghệ(ĐHQG)","CNTT","28.1","150","","https://tuyensinh.uet.vnu.edu.vn/?cat=21"
-"ĐH KHTN(ĐHQG)","Máy tính và Khoa học thông tin","24.8","70","3tr/ tháng","http://hus.vnu.edu.vn/dao-tao/bac-dai-hoc/toan-co-tin-hoc.html"
-"HV Kĩ Thuật Quân Sự","CNTT","26.5","","",""
-"ĐH GTVT","CNTT","23.3","300","","http://tuyensinh.utc.edu.vn/?q=thong-tin-tuyen-sinh"
-"ĐH Công nghệ GTVT","CNTT","23.00","90","","https://utt.edu.vn/tuyensinh"
-"ĐH Kinh Tế Quốc Dân","CNTT","26.6","120","","https://isme.neu.edu.vn/2706/thong-bao-tuyen-sinh-chuong-trinh-cu-nhan-quoc-te-ibd-khoa-17-ky-mua-thu-2021/?fbclid=IwAR2EMlOJaeQYgAXyHH7qU8X9y091RPrqEGs8mjoCWPM5Yy5llbS2QAzxkkk"
-"ĐH Xây Dựng","CNTT","24.25","","","http://www.tuyensinh.nuce.edu.vn/He-Dai-hoc-chinh-quy/Nganh-Cong-nghe-thong-tin_115"
-"ĐH Công Nghiệp HN","CNTT","25.6","390","","https://tuyensinh.haui.edu.vn/dai-hoc/tuyen-sinh-dai-hoc-chinh-quy"
-"Bách Khoa","Toán Tin","27.56","120","22-28tr/năm","https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021"
-"Bách Khoa","CNTT(Úc)","26.5","70","40tr-50tr/năm","https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021"
-"Bách Khoa","CNTT(Victoria-NewZealand)","25.55","60","40tr-50tr/năm","https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021"
-"Bách Khoa","CNTT VJ","27.98","240","30tr-40tr/năm","https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021"
-"Bách Khoa","CNTT(Việt Pháp)","27.24","40","50tr/1 năm","https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021"
-"ĐH FPT","CNTT","21","","","https://daihoc.fpt.edu.vn/nganh-hoc/may-tinh-cntt/"
-"HV Kĩ Thuật Mật Mã","CNTT","25.8","","",""
-"ĐH Khoa Học và Công Nghệ","CNTT","24.75","","",""
-"Phenikaa","CNTT VJ","19.05","100","32tr","https://phenikaa-uni.edu.vn/vi/post/dao-tao/dao-tao-dai-hoc/chuong-trinh-cong-nghe-thong-tin-viet-nhat"
+Trường,Ngành,Điểm chuẩn,Chỉ tiêu,Học phí,Giới thiệu
+Bách Khoa,CNTT(Khoa Học Máy Tính),29.04,260,22-28tr/năm,https://ts.hust.edu.vn/nganh-dao-tao/cntt-khoa-hoc-may-tinh
+ĐH Công Nghệ(ĐHQG),CNTT,28.1,150,,https://tuyensinh.uet.vnu.edu.vn/?cat=21
+Bách Khoa,CNTT VJ,27.98,240,30tr-40tr/năm,https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021
+Bách Khoa,Toán Tin,27.56,120,22-28tr/năm,https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021
+Bách Khoa,CNTT(Việt Pháp),27.24,40,50tr/1 năm,https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021
+HV BCVT,CNTT,26.65,630,480k/tín(17tr 1 năm),https://tuyensinh.ptit.edu.vn/
+ĐH Kinh Tế Quốc Dân,CNTT,26.6,120,,https://isme.neu.edu.vn/2706/thong-bao-tuyen-sinh-chuong-trinh-cu-nhan-quoc-te-ibd-khoa-17-ky-mua-thu-2021/?fbclid=IwAR2EMlOJaeQYgAXyHH7qU8X9y091RPrqEGs8mjoCWPM5Yy5llbS2QAzxkkk
+HV Kĩ Thuật Quân Sự,CNTT,26.5,,,
+Bách Khoa,CNTT(Úc),26.5,70,40tr-50tr/năm,https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021
+HV Kĩ Thuật Mật Mã,CNTT,25.8,,,
+ĐH Công Nghiệp HN,CNTT,25.6,390,,https://tuyensinh.haui.edu.vn/dai-hoc/tuyen-sinh-dai-hoc-chinh-quy
+Bách Khoa,CNTT(Victoria-NewZealand),25.55,60,40tr-50tr/năm,https://ts.hust.edu.vn/b/phuong-thuc-tuyen-sinh-2021
+ĐH KHTN(ĐHQG),Máy tính và Khoa học thông tin,24.8,70,3tr/ tháng,http://hus.vnu.edu.vn/dao-tao/bac-dai-hoc/toan-co-tin-hoc.html
+ĐH Khoa Học và Công Nghệ,CNTT,24.75,,,
+ĐH Xây Dựng,CNTT,24.25,,,http://www.tuyensinh.nuce.edu.vn/He-Dai-hoc-chinh-quy/Nganh-Cong-nghe-thong-tin_115
+ĐH GTVT,CNTT,23.3,300,,http://tuyensinh.utc.edu.vn/?q=thong-tin-tuyen-sinh
+ĐH Công nghệ GTVT,CNTT,23,90,,https://utt.edu.vn/tuyensinh
+ĐH FPT,CNTT,21,,,https://daihoc.fpt.edu.vn/nganh-hoc/may-tinh-cntt/
+Phenikaa,CNTT,19.05,200,24tr,https://cs.phenikaa-uni.edu.vn/vi/post/dao-tao/cong-nghe-thong-tin
+Phenikaa,CNTT VJ,19.05,100,32tr,https://phenikaa-uni.edu.vn/vi/post/dao-tao/dao-tao-dai-hoc/chuong-trinh-cong-nghe-thong-tin-viet-nhat

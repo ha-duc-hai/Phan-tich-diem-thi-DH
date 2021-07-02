@@ -2,10 +2,11 @@ import tkinter as tk
 from tkinter import Canvas, Label, OptionMenu, Scrollbar, StringVar, XView, ttk
 from tkinter import IntVar
 from tkinter.constants import BOTTOM, CENTER, COMMAND, INSIDE, RIGHT, TOP, VERTICAL
-
+from tkinter import font as tkFont
 
 def tab_2(tabControl):
-    tab2 = ttk.Frame(tabControl)
+   
+    tab2 = ttk.Frame(tabControl, style='new.TFrame')
     tabControl.add(tab2, text ='Chọn trường đại học theo điểm')
     tabControl.pack(expand = 1, fill ="both")
 
@@ -29,9 +30,9 @@ def tab_2(tabControl):
     lab_8 = Label(tab2, text = 'Địa :')
     lab_9 = Label(tab2, text = 'GDCD :')
 
-    b_1.place(x=100, y=20)
-    b_2.place(x=100, y=70)
-    b_3.place(x=100, y=120)
+    b_1.place(x=200, y=20)
+    b_2.place(x=200, y=70)
+    b_3.place(x=200, y=120)
     b_4.place(x=550, y=20)
     b_5.place(x=550, y=70)
     b_6.place(x=550, y=120)
@@ -39,9 +40,9 @@ def tab_2(tabControl):
     b_8.place(x=950, y=70)
     b_9.place(x=950, y=120)
 
-    lab_1.place(x=250, y=20)
-    lab_2.place(x=250, y=70)
-    lab_3.place(x=250, y=120)
+    lab_1.place(x=150, y=20)
+    lab_2.place(x=150, y=70)
+    lab_3.place(x=150, y=120)
     lab_4.place(x=500, y=20)
     lab_5.place(x=500, y=70)
     lab_6.place(x=500, y=120)
@@ -81,11 +82,11 @@ def tab_2(tabControl):
     variable = StringVar()
     variable.set("Chọn ngành học") # default value
     option = [ "Cntt", "Tài chính - kế toán", "y dược","Vật liệu","Quản trị kinh doanh"]
-    OptionMenu(tab2, variable, *(option), command =OptionMenu_CheckButton).place(x = 600, y = 170)
+    OptionMenu(tab2, variable, *(option), command =OptionMenu_CheckButton).place(x = 630, y = 170)
 
     # setting
-    label = tk.Label(tab2, text= "Điểm tổ hợp của bạn: ")
-    label.place(x = 400, y = 180)
+    label = tk.Label(tab2, text= "Điểm tổ hợp của bạn: ", font='Helvetica 12 bold')
+    label.place(x = 300, y = 170)
     point_arr = []
     def point (): 
         arr = []
@@ -105,19 +106,19 @@ def tab_2(tabControl):
                 sum += float(i)
 
         point_arr.append(sum)
-        label = tk.Label(tab2, text= "  " + str(sum)+ " ")
-        label.place(x = 520, y = 180)
+        label = tk.Label(tab2, text= "  " + str(sum)+ " ",  font='Helvetica 12 bold')
+        label.place(x = 510, y = 170)
 
     # open link
     link = []
     def link_tree(event):
+        
         input_id = table_.selection()
         str = input_id[-1][-3:]
         input_item = table_.item(input_id,"text")
-
         #for opening the link in browser
         import webbrowser
-        webbrowser.open(link[int(str)-1].format(input_item))
+        webbrowser.open(link[int(str, 16)-1].format(input_item))
 
     # search in table
     def search_():
@@ -138,7 +139,7 @@ def tab_2(tabControl):
                 if float(line[2]) <= num:
                     table_.insert('','end',values=(line[0],line[1],line[2],line[3],line[4],line[5]))
                     table_.bind("<Double-1>", link.append(line[5]))
-                    table_.bind("<Double-1>", link_tree)
+            table_.bind("<Double-1>", link_tree)
 
         # QTKD data
         if posion== "Quản trị kinh doanh":
@@ -154,7 +155,7 @@ def tab_2(tabControl):
                 if float(line[2]) <= num:
                     table_.insert('','end',values=(line[0],line[1],line[2],line[3],line[4],line[5]))
                     table_.bind("<Double-1>", link.append(line[5]))
-                    table_.bind("<Double-1>", link_tree)
+            table_.bind("<Double-1>", link_tree)
 
         # Y data
         if posion == "y dược":
@@ -170,11 +171,11 @@ def tab_2(tabControl):
                 if float(line[2]) <= num:
                     table_.insert('','end',values=(line[0],line[1],line[2],line[3],line[4],line[5]))
                     table_.bind("<Double-1>", link.append(line[5]))
-                    table_.bind("<Double-1>", link_tree)
+            table_.bind("<Double-1>", link_tree)
 
     # sreach button
-    search_button = tk.Button(tab2, text='Tìm kiếm', command= lambda: [point(), search_()])
-    search_button.place(x = 800, y = 170)
+    search_button = tk.Button(tab2, text='Tìm kiếm', command= lambda: [point(), search_()], font='Helvetica 12 bold')
+    search_button.place(x = 900, y = 170)
 
 
 

@@ -53,7 +53,7 @@ but = Button(
  
 img = image(2) # 1=normal, 2=small, 3=smallest
 but.config(image=img)
-but.place(x = 620, y = 325)
+but.place(x = 500, y = 270)
 
 
 root.mainloop()

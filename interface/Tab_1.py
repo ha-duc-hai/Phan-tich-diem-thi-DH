@@ -118,10 +118,16 @@ def creat_bar_chart(tab1, subject, data):
 
 # tab
 def tab_1(tabControl):
-    tab1 = ttk.Frame(tabControl)
+    # s.configure('Frame1.TFrame', background='red')
+
+    tab1 = ttk.Frame(tabControl, style='new.TFrame')
+
+
+    # tab1.config(bg="skyblue")
     tabControl.add(tab1, text ='Biểu đồ điểm từng môn học')
-    # tabControl.pack(expand = 1, fill ="both")
+    tabControl.pack(expand = 1, fill ="both")
     
+
     # load data
     toan, van, anh, ly, hoa, sinh, su, dia , gdcd = load_data()
     toan, van, anh, ly, hoa, sinh, su, dia , gdcd = handling_data(toan, van, anh, ly, hoa, sinh, su, dia , gdcd)
