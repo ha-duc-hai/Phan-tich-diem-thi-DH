@@ -52,7 +52,7 @@ def tab_3(tabControl):
             for record in table_.get_children():
                 table_.delete(record)
             # insert data
-            f = open('CNTT.csv', 'r',encoding='utf8')
+            f = open('chuyen_nganh/CNTT.csv', 'r',encoding='utf8')
             line = f.readline()
             for line in f.readlines():
                 line = line.replace('\n', '').replace('"', '')
@@ -67,7 +67,7 @@ def tab_3(tabControl):
             for record in table_.get_children():
                 table_.delete(record)
             # insert data
-            f = open('QTKD.csv', 'r',encoding='utf8')
+            f = open('chuyen_nganh/QTKD.csv', 'r',encoding='utf8')
             line = f.readline()
             for line in f.readlines():
                 line = line.replace('\n', '').replace('"', '')
@@ -81,7 +81,7 @@ def tab_3(tabControl):
             for record in table_.get_children():
                 table_.delete(record)
             # insert data
-            f = open('Dược.csv', 'r',encoding='utf8')
+            f = open('chuyen_nganh/Dược.csv', 'r',encoding='utf8')
             line = f.readline()
             for line in f.readlines():
                 line = line.replace('\n', '').replace('"', '')

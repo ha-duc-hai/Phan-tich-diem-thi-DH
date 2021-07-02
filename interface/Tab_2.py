@@ -141,12 +141,12 @@ def tab_2(tabControl):
                     table_.bind("<Double-1>", link_tree)
 
         # QTKD data
-        if posion== "chuyen_nganh/Quản trị kinh doanh":
+        if posion== "Quản trị kinh doanh":
             # clear old data
             for record in table_.get_children():
                 table_.delete(record)
             # insert data
-            f = open('QTKD.csv', 'r',encoding='utf8')
+            f = open('chuyen_nganh/QTKD.csv', 'r',encoding='utf8')
             line = f.readline()
             for line in f.readlines():
                 line = line.replace('\n', '').replace('"', '')
