@@ -1,5 +1,5 @@
 from os import stat
-import tkinter as tk                    
+import tkinter as tk
 from tkinter import OptionMenu, Scrollbar, StringVar, ttk
 from tkinter import IntVar
 from tkinter.constants import CENTER, END, LEFT, RIGHT, VERTICAL, Y
@@ -10,7 +10,7 @@ def tab_3(tabControl):
     tabControl.add(tab3, text ='So sánh các ngành học giữa các trường')
     # tabControl.pack(expand = 1, fill ="both")
 
-    
+
     # table
     table_ = ttk.Treeview(tab3, columns=(1,2,3,4,5,6), show='headings', height=20)
     table_.place(x = 20, y = 70)
@@ -21,14 +21,14 @@ def tab_3(tabControl):
     table_.heading(4, text="chỉ tiêu",anchor=CENTER)
     table_.heading(5, text="học phí",anchor=CENTER)
     table_.heading(6, text="preview",anchor=CENTER)
-    
+
     table_.column(1,  anchor=CENTER)
     table_.column(2,  anchor=CENTER)
     table_.column(3,  anchor=CENTER)
     table_.column(4,  anchor=CENTER)
     table_.column(5,  anchor=CENTER)
     table_.column(6,  anchor=CENTER)
-    
+
     # thanh lăn
     sb = Scrollbar(tab3, orient=VERTICAL, command=table_.yview)
     sb.pack(side='right', fill = 'y')
@@ -95,11 +95,5 @@ def tab_3(tabControl):
     variable.set("Chọn ngành học") # default value
     option = [ "Cntt", "Tài chính - kế toán", "y dược","Vật liệu","Quản trị kinh doanh"]
     OptionMenu(tab3, variable, *(option), command =OptionMenu_CheckButton).place(x= 500, y = 20)
-    
 
-    
-   
-    
-
-    
 
