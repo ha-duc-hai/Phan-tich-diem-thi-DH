@@ -85,7 +85,7 @@ def tab_2(tabControl):
 
     # setting
     label = tk.Label(tab2, text= "Điểm tổ hợp của bạn: ")
-    label.place(x = 400, y = 170)
+    label.place(x = 400, y = 180)
     point_arr = []
     def point (): 
         arr = []
@@ -106,7 +106,7 @@ def tab_2(tabControl):
 
         point_arr.append(sum)
         label = tk.Label(tab2, text= "  " + str(sum)+ " ")
-        label.place(x = 520, y = 170)
+        label.place(x = 520, y = 180)
 
     # open link
     link = []

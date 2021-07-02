@@ -1,12 +1,13 @@
 import tkinter as tk                    
-from tkinter import ttk
+from tkinter import Label, PhotoImage, ttk
 from tkinter import IntVar
 from tkinter.constants import BOTTOM
 from pandas import DataFrame
+from tkinter import *
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-
+from PIL import Image,ImageTk
 
 
 #  load dữ liệu
@@ -111,7 +112,7 @@ def creat_bar_chart(tab1, subject, data):
     df1 = df1[['Điểm','Số lượng thí sinh']].groupby('Điểm').sum()
     df1.plot(kind='bar', legend=True, ax=ax1)
     ax1.set_title('Phổ điểm môn ' + subject)
-    bar1.get_tk_widget().place(x=390, y=330, anchor='w')
+    bar1.get_tk_widget().place(x=390, y=344, anchor='w')
 
 
 
@@ -121,32 +122,34 @@ def tab_1(tabControl):
     tabControl.add(tab1, text ='Biểu đồ điểm từng môn học')
     tabControl.pack(expand = 1, fill ="both")
 
+    # background
+    
     # load data
     toan, van, anh, ly, hoa, sinh, su, dia , gdcd = load_data()
     toan, van, anh, ly, hoa, sinh, su, dia , gdcd = handling_data(toan, van, anh, ly, hoa, sinh, su, dia , gdcd)
     
     # creat button
-    b_1 = tk.Button(tab1, text = 'Toán',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Toán",toan)])
-    b_2 = tk.Button(tab1, text = 'Văn',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Văn",van)])
-    b_3 = tk.Button(tab1, text = 'Anh',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Anh",anh)])
-    b_4 = tk.Button(tab1, text = 'Lý',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Lý",ly)])
-    b_5 = tk.Button(tab1, text = 'Hóa',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Hóa",hoa)])
-    b_6 = tk.Button(tab1, text = 'Sinh',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Sinh",sinh)])
-    b_7 = tk.Button(tab1, text = 'Sử',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Sử",su)])
-    b_8 = tk.Button(tab1, text = 'Địa',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Địa",dia)])
-    b_9 = tk.Button(tab1, text = 'GDCD',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "GDCD",gdcd)])
+    b_1 = tk.Button(tab1, text = 'Toán',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Toán",toan)], height = 2, width = 7)
+    b_2 = tk.Button(tab1, text = 'Văn',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Văn",van)], height = 2, width = 7)
+    b_3 = tk.Button(tab1, text = 'Anh',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Anh",anh)], height = 2, width = 7)
+    b_4 = tk.Button(tab1, text = 'Lý',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Lý",ly)], height = 2, width = 7)
+    b_5 = tk.Button(tab1, text = 'Hóa',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Hóa",hoa)], height = 2, width = 7)
+    b_6 = tk.Button(tab1, text = 'Sinh',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Sinh",sinh)], height = 2, width = 7)
+    b_7 = tk.Button(tab1, text = 'Sử',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Sử",su)], height = 2, width = 7)
+    b_8 = tk.Button(tab1, text = 'Địa',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Địa",dia)], height = 2, width = 7)
+    b_9 = tk.Button(tab1, text = 'GDCD',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "GDCD",gdcd)], height = 2, width = 7)
     
 
     # set posion button
-    b_1.place(x=50, y=20)
-    b_2.place(x=150, y=20)
-    b_3.place(x=250, y=20)
-    b_4.place(x=350, y=20)
-    b_5.place(x=450, y=20)
-    b_6.place(x=550, y=20)
-    b_7.place(x=650, y=20)
-    b_8.place(x=750, y=20)
-    b_9.place(x=850, y=20)
+    b_1.place(x=100, y=20)
+    b_2.place(x=220, y=20)
+    b_3.place(x=340, y=20)
+    b_4.place(x=460, y=20)
+    b_5.place(x=580, y=20)
+    b_6.place(x=700, y=20)
+    b_7.place(x=820, y=20)
+    b_8.place(x=940, y=20)
+    b_9.place(x=1060, y=20)
 
 
 
