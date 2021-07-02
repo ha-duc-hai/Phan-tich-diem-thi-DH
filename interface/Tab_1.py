@@ -125,12 +125,8 @@ def tab_1(tabControl):
 
     # tab1.config(bg="skyblue")
     tabControl.add(tab1, text ='Biểu đồ điểm từng môn học')
-<<<<<<< HEAD
     tabControl.pack(expand = 1, fill ="both")
     
-=======
-    # tabControl.pack(expand = 1, fill ="both")
->>>>>>> 438407581c8494bc114a2dcb3bd4be1e8f61dbb0
 
     # load data
     toan, van, anh, ly, hoa, sinh, su, dia , gdcd = load_data()
