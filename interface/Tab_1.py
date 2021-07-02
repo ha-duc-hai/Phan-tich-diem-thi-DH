@@ -110,7 +110,7 @@ def creat_bar_chart(tab1, subject, data):
     bar1 = FigureCanvasTkAgg(figure1, tab1)
     df1 = df1[['Điểm','Số lượng thí sinh']].groupby('Điểm').sum()
     df1.plot(kind='bar', legend=True, ax=ax1)
-    ax1.set_title('Histogram điểm ' + subject)
+    ax1.set_title('Phổ điểm môn ' + subject)
     bar1.get_tk_widget().place(x=390, y=330, anchor='w')
 
 
