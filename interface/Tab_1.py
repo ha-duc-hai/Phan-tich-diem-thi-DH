@@ -1,4 +1,4 @@
-import tkinter as tk                    
+import tkinter as tk
 from tkinter import Label, PhotoImage, ttk
 from tkinter import IntVar
 from tkinter.constants import BOTTOM
@@ -43,7 +43,7 @@ def load_data():
             dia.append(float(line[10]))
         if line[11][0] !='0':
             gdcd.append(float(line[11]))
-    
+
     return toan, van, anh, ly, hoa, sinh, su, dia , gdcd
 
 # xử lý data
@@ -70,7 +70,7 @@ def standard(arr):
             else:
                 n = temp + 1
         return n
-    
+
     # xử lý mảng
     for i in range(0, arr.size):
         arr[i] = calc(arr[i])
@@ -94,7 +94,7 @@ def standard(arr):
     if i <10: 
         result.append(0)
     return result
-    
+
 
 
 # tạo histogram
@@ -105,7 +105,7 @@ def creat_bar_chart(tab1, subject, data):
         }
     df1 = DataFrame(data1,columns=['Điểm','Số lượng thí sinh'])
 
-    
+
     figure1 = plt.Figure(figsize=(6,6), dpi=90)
     ax1 = figure1.add_subplot(111)
     bar1 = FigureCanvasTkAgg(figure1, tab1)
@@ -121,11 +121,11 @@ def tab_1(tabControl):
     tab1 = ttk.Frame(tabControl)
     tabControl.add(tab1, text ='Biểu đồ điểm từng môn học')
     # tabControl.pack(expand = 1, fill ="both")
-    
+
     # load data
     toan, van, anh, ly, hoa, sinh, su, dia , gdcd = load_data()
     toan, van, anh, ly, hoa, sinh, su, dia , gdcd = handling_data(toan, van, anh, ly, hoa, sinh, su, dia , gdcd)
-    
+
     # creat button
     b_1 = tk.Button(tab1, text = 'Toán',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Toán",toan)], height = 2, width = 7)
     b_2 = tk.Button(tab1, text = 'Văn',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Văn",van)], height = 2, width = 7)
@@ -136,7 +136,7 @@ def tab_1(tabControl):
     b_7 = tk.Button(tab1, text = 'Sử',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Sử",su)], height = 2, width = 7)
     b_8 = tk.Button(tab1, text = 'Địa',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "Địa",dia)], height = 2, width = 7)
     b_9 = tk.Button(tab1, text = 'GDCD',bg='orange',fg='black', command = lambda : [creat_bar_chart(tab1, "GDCD",gdcd)], height = 2, width = 7)
-    
+
 
     # set posion button
     b_1.place(x=100, y=20)
@@ -152,6 +152,6 @@ def tab_1(tabControl):
 
 
 
-    
-    
-    
+
+
+

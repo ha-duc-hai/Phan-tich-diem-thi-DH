@@ -1,4 +1,4 @@
-import tkinter as tk                    
+import tkinter as tk
 from tkinter import Canvas, Label, OptionMenu, Scrollbar, StringVar, XView, ttk
 from tkinter import IntVar
 from tkinter.constants import BOTTOM, CENTER, COMMAND, INSIDE, RIGHT, TOP, VERTICAL
@@ -59,14 +59,14 @@ def tab_2(tabControl):
     table_.heading(4, text="chỉ tiêu",anchor=CENTER)
     table_.heading(5, text="học phí",anchor=CENTER)
     table_.heading(6, text="Preview",anchor=CENTER)
-    
+
     table_.column(1,  anchor=CENTER)
     table_.column(2,  anchor=CENTER)
     table_.column(3,  anchor=CENTER)
     table_.column(4,  anchor=CENTER)
     table_.column(5,  anchor=CENTER)
     table_.column(6,  anchor=CENTER)
-    
+
     # thanh lăn
     sb = Scrollbar(tab2, orient=VERTICAL, command=table_.yview)
     sb.pack(side='right', fill = 'y')
@@ -87,7 +87,7 @@ def tab_2(tabControl):
     label = tk.Label(tab2, text= "Điểm tổ hợp của bạn: ")
     label.place(x = 400, y = 180)
     point_arr = []
-    def point (): 
+    def point ():
         arr = []
         arr.append(b_1.get())
         arr.append(b_2.get())
@@ -98,7 +98,7 @@ def tab_2(tabControl):
         arr.append(b_7.get())
         arr.append(b_8.get())
         arr.append(b_9.get())
-        
+
         sum = 0
         for i in arr:
             if i != "":

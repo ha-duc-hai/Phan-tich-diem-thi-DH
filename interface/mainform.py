@@ -1,5 +1,5 @@
 # mainform with tab
-import tkinter as tk                    
+import tkinter as tk
 from tkinter import Image, Label, image_names, ttk
 from tkinter import IntVar
 
@@ -7,7 +7,7 @@ import webbrowser
 from Tab_1 import tab_1
 from Tab_2 import tab_2
 from Tab_3 import tab_3
-  
+
 root = tk.Tk()
 root.title("Phần mềm phân tích điểm thi đại học 2020")
 # icon
