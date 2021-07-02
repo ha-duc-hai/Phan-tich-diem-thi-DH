@@ -6,16 +6,18 @@
 - Cung cấp cho học sinh thông tin cần thiết cần biết về các trường đại học ở khu vực
 - Giúp nhà trường đánh giá mức độ quan tâm của học sinh đối với nhà trường, từ đó điểu chỉnh chỉ tiêu và kế hoạch giáo dục
 
-## Mô tả
-- reports -> Báo cáo hàng tuần
-- User Interface -> chứa code giao diện người dùng
-- get_dataSelenium.py -> code chạy lấy dữ liệu
-- data.csv -> dữ liệu điểm thi ĐH của 63 tỉnh thành
+## Sản phẩm bao gồm
+- reports : báo cáo hàng tuần
+- new_getDataSelenium.py : craw dữ liệu điểm thi sinh viên 2020
+- interface : giao diện phần mềm
 
 ## Một số lưu ý/ hướng dẫn
 - Sử dụng python 3
 - cài chromedrive đúng yêu cầu của máy (ở đây chúng tôi cài phiên bản 90 dành cho windows)
 - cài thư viện selenium ( pip install selenium )
+- Sau khi chạy new_getDataSelenium.py, dữ liệu sẽ được xuất ra file new_data.csv
+- Kéo files new_data.csv vào interface
+- Để chạy giao diện , tại interface chạy mainform.py
 
 ## Thành viên nhóm
 ### Hà Đức Hải (trưởng nhóm)
